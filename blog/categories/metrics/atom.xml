@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Metrics | RNA-Puzzles toolkit]]></title>
+  <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/categories/metrics/atom.xml" rel="self"/>
+  <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/"/>
+  <updated>2018-07-22T11:27:13+01:00</updated>
+  <id>http://chichaumiau.github.io/rnapuzzlestoolkit/</id>
+  <author>
+    <name><![CDATA[Chichau Miau]]></name>
+    <email><![CDATA[chichaumiau@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Basic Assessment Metrics]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/basic-assessment-metrics/"/>
+    <updated>2018-07-22T11:24:57+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/basic-assessment-metrics</id>
+    <content type="html"><![CDATA[<p>The basic metrics of RNA 3D structure comparison include:</p>
+
+
+
+
+<ul>
+<li>Root Mean Square Deviation (RMSD)</li>
+<li>P value</li>
+<li>Deformation Index</li>
+<li>Interaction Network fidelity
+
+<ul>
+<li>this metric can be measured by different types of contacts, including:</li>
+<li>all contacts</li>
+<li>Watson-Crick interaction</li>
+<li>non-Waston-Crick interaction</li>
+<li>stacking</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<p>All of these metrics have been implemented in <a href="https://github.com/RNA-Puzzles/BasicAssessMetrics">Basic Assess Metrics</a> (author: <a href="mailto:zmiao@ebi.ac.uk">Chichau</a>)</p>
+
+]]></content>
+  </entry>
+  
+</feed>

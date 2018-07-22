@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/basic-assessment-metrics/</loc>
+<lastmod>2018-07-22T11:24:57+01:00</lastmod>
+</url>
+<url>
 <loc>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2000/01/01/puzzle-1-3d/</loc>
 <lastmod>2000-01-01T00:00:01+00:00</lastmod>
 </url>
@@ -21,5 +25,8 @@
 </url>
 <url>
 <loc>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/categories/table/</loc>
+</url>
+<url>
+<loc>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/categories/metrics/</loc>
 </url>
 </urlset>
