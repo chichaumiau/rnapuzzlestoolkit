@@ -4,7 +4,7 @@
   <title><![CDATA[Metrics | RNA-Puzzles toolkit]]></title>
   <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/categories/metrics/atom.xml" rel="self"/>
   <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/"/>
-  <updated>2018-07-22T12:34:58+01:00</updated>
+  <updated>2018-07-22T15:00:25+01:00</updated>
   <id>http://chichaumiau.github.io/rnapuzzlestoolkit/</id>
   <author>
     <name><![CDATA[Chichau Miau]]></name>
@@ -12,6 +12,103 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RNAQUA]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rnaqua/"/>
+    <updated>2018-07-22T11:48:26+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rnaqua</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/mantczak/rnaqua.git">RNAQUA (RNA QUality Assessment)</a> is a web service based wrapper of basic RNA comparison metrics. It is a RESTful web service client developed in Java. The tool provides a set of web services initially designed for RNAssess (Lukasiak et al., Nucleic Acids Research, 2015;43(W1):W502-W506. doi:10.1093/nar/gkv557) to support the quality assessment of RNA 3D structures. RNAQUA requires a stable release of JRE 7 (or later) installed on a user workstation with an internet access. Full implementation of the tool is stored on github and maintained by Antczak. The binaries and use cases can be downloaded from <a href="https://github.com/mantczak/rnaqua/releases/download/v1.0/rnaqua-binary.zip">here</a>.
+Most important features of RNAQUA:</p>
+
+
+
+
+<ul>
+<li>At the input, a user provides RNA 3D structure(s) in PDB format.</li>
+<li>Output data are returned in XML format.</li>
+<li>RNAQUA allows to compute the following measures:
+
+<ul>
+<li>ClashScore,</li>
+<li>Root-mean-square deviation (RMSD),</li>
+<li>Interaction network fidelity (INF),</li>
+<li>Deformation index (DI),</li>
+<li>P-value (either for entire RNA 3D structure(s) or for a set of discontinuous 3D substructures).</li>
+</ul>
+</li>
+<li>Two processing modes are available:
+
+<ul>
+<li>An analysis of single RNA 3D structure (PDB validation, ClashScore, sequence-based analysis, structure unification),</li>
+<li>An analysis of RNA 3D model(s) with respect to the reference structure (RMSD, INF, DI, P-value, Deformation profile, sequence-based differences between structures, multiple models over the reference structure superposition).</li>
+</ul>
+</li>
+<li>Optionally, the user can define alignment between the reference structure and all corresponding RNA 3D model(s) which is helpful if there are differences in sequence, distribution of chains or residue numbering.</li>
+</ul>
+
+
+
+
+<p>This metric tool is maintained by <a href="mailto:mantczak@cs.put.poznan.pl">Antczak</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MCQ and LCS-TA]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/mcq-and-lcs-ta/"/>
+    <updated>2018-07-22T11:48:14+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/mcq-and-lcs-ta</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/tzok/mcq4structures">MCQ (Mean of Circular Quantities)</a> has been first presented in the paper “MCQ4Structures to compute similarity of molecule structures” by Zok et al. (Central European Journal of Operations Research, 2014;22(3):457-474. doi: 10.1007/s10100-013-0296-5).</p>
+
+
+
+
+<p><a href="https://github.com/tzok/mcq4structures">LCS-TA</a> (Longest Continuous Segments in Torsion Angle space) applies a measure first described in the paper “LCS-TA to identify similar fragments in RNA 3D structures” by Wiedemann et al. (BMC Bioinformatics, 2017;18(1):456. doi: 10.1186/s12859-017-1867-6).
+A full implementation of both methods can be found on github, maintained by Zok and Wiedemann.</p>
+
+
+
+
+<p>Most important features of both methods / measures:</p>
+
+
+
+
+<ul>
+<li><p>MCQ</p>
+
+<ul>
+<li>The method applies to a pair of 3D structures and is size independent.</li>
+<li>It can be used for a set of structures in all-against-all or all-against-target mode.</li>
+<li>It translates typical algebraic representation of a 3D structure into the trigonometric one (a set of torsion angles).</li>
+<li>It computes the distance between structures in torsion angle space.</li>
+<li>The distance is measured as mean of local distances between the corresponding angles, and provided in degrees.</li>
+<li>The measure is sequence independent.</li>
+</ul>
+</li>
+<li><p>LCS-TA</p>
+
+<ul>
+<li>The method applies to a pair of 3D structures and is size independent.</li>
+<li>It uses MCQ-based measure for structure comparison.</li>
+<li>Within the compared structures, it finds the longest continuous segments which display similarity in torsion angle space.</li>
+<li>Two segments are considered similar if their MCQ is below predefined threshold.</li>
+<li>The method provides segment length and its position in the structure.</li>
+<li>The length of the longest continuous segment is a measure of similarity of two structures.</li>
+<li>The method can be run in sequence dependent or sequence independent mode.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<p>MCQ is maintained by <a href="mailto:tzok@cs.put.poznan.pl">Zok</a>, while LCS-TA is maintained by <a href="mailto:jwiedemann@cs.put.poznan.pl">Wiedemann</a></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Deformation Profile]]></title>

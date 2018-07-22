@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Format | RNA-Puzzles toolkit]]></title>
+  <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/categories/format/atom.xml" rel="self"/>
+  <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/"/>
+  <updated>2018-07-22T15:00:25+01:00</updated>
+  <id>http://chichaumiau.github.io/rnapuzzlestoolkit/</id>
+  <author>
+    <name><![CDATA[Chichau Miau]]></name>
+    <email><![CDATA[chichaumiau@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RNA-Puzzles Format Check]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-format-check/"/>
+    <updated>2018-07-22T11:47:47+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-format-check</id>
+    <content type="html"><![CDATA[<p>After the first RNA-Puzzles meeting (2016 Oct, Strasbourg), the RNA-Puzzles community have agreed to unify all predictions to the same PDB format.</p>
+
+
+
+
+<p>To check if the submitted structures are in good format, a simple script based tool is provided:</p>
+
+
+
+
+<h1><a href="https://github.com/RNA-Puzzles/RNA-Puzzzles_format">RNA-Puzzles format</a></h1>
+
+
+
+
+<p> &ndash; a tool used to check if a predicted structure is in good format.</p>
+
+
+
+
+<p>To format/normalize RNA structures, please use <a href="https://chichaumiau.github.io/rnabench/blog/2017/11/11/rna-structure-format-tools/">structure normalization tools</a>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RNA Structure Format Tools]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-structure-format-tools/"/>
+    <updated>2018-07-22T11:47:31+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-structure-format-tools</id>
+    <content type="html"><![CDATA[<p>RNA structures in RNA-Puzzles are deposited as <a href="https://www.rcsb.org/pdb/file_formats/pdb/pdbguide2.2/PDB_format_1992.pdf">PDB</a> format. However, we need to consider the variations when participants generate their predictions, e.g. the nomencleture of the residue/atom names, and the variations in the format of deposited native structure. Sometimes, the sequence used in prediction may slightly deviate from the solved crystal structure: in such a case, we need to compare only the common part of the structure.</p>
+
+
+
+
+<p>Considering these aspects, we provide some tools here to normalize the PDB format of RNA structure:</p>
+
+
+
+
+<h1><a href="https://github.com/RNA-Puzzles/BasicAssessMetrics">PDB normalizer</a></h1>
+
+
+
+
+<p>&ndash; this tool is the PDB normalization tool used by RNA-Puzzles, and is part of the basic assessment metrics tool. (Maintained by <a href="mailto:zmiao@ebi.ac.uk">Chichau</a>)</p>
+
+
+
+
+<h1><a href="https://github.com/RNA-Puzzles/rna-pdb-tools">RNA PDB tools</a></h1>
+
+
+
+
+<p>&ndash; Alternatively, you may use a more functional tool RNA-PDB-tools, which is mained by <a href="mailto:magnus@genesilico.pl">Marcin Magnus</a>.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

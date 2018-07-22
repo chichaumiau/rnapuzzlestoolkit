@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Dataset | RNA-Puzzles toolkit]]></title>
+  <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/categories/dataset/atom.xml" rel="self"/>
+  <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/"/>
+  <updated>2018-07-22T15:00:25+01:00</updated>
+  <id>http://chichaumiau.github.io/rnapuzzlestoolkit/</id>
+  <author>
+    <name><![CDATA[Chichau Miau]]></name>
+    <email><![CDATA[chichaumiau@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RNA-Puzzles Datasets]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-datasets/"/>
+    <updated>2018-07-22T11:48:03+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-datasets</id>
+    <content type="html"><![CDATA[<p>We provide all the native and predicted structures from RNA-Puzzles <a href="https://github.com/RNA-Puzzles/RNA-Puzzles_dataset">here</a> as a dataset resource.</p>
+
+
+
+
+<p>Currently, there is few gold standard datasets available  in benchmarking RNA 3D structure prediction. RNA-Puzzles as a well-established blind assessment of RNA 3D structure prediction. Therefore, the structure data from RNA-Puzzles can provide as a good benchmark set for RNA 3D structure prediction. Besides, the predicted structures submitted to RNA-Puzzles, which are generated through various prediction methods that generally covers all the RNA 3D structure prediction methods, can be considered as perfect decoy sets in deriving energy functions for RNA structure folding.</p>
+
+
+
+
+<p>We provide both <a href="https://github.com/RNA-Puzzles/RNA-Puzzles_dataset/tree/master/raw">raw</a> predictions and <a href="https://github.com/RNA-Puzzles/RNA-Puzzles_dataset/tree/master/normalized">normalized</a> format of the RNA structures. Besides, we also normalized the structures with <a href="https://github.com/RNA-Puzzles/rna-pdb-tools">RNA-PDB-tools</a> and provide the results <a href="https://github.com/RNA-Puzzles/RNA-Puzzles-Normalized-submissions">here</a>.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

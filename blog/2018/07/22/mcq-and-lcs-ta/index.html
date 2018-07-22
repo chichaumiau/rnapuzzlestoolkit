@@ -156,7 +156,53 @@
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description">
+<div class="entry-content clearfix" itemprop="articleBody description"><p><a href="https://github.com/tzok/mcq4structures">MCQ (Mean of Circular Quantities)</a> has been first presented in the paper “MCQ4Structures to compute similarity of molecule structures” by Zok et al. (Central European Journal of Operations Research, 2014;22(3):457-474. doi: 10.1007/s10100-013-0296-5).</p>
+
+
+
+
+<p><a href="https://github.com/tzok/mcq4structures">LCS-TA</a> (Longest Continuous Segments in Torsion Angle space) applies a measure first described in the paper “LCS-TA to identify similar fragments in RNA 3D structures” by Wiedemann et al. (BMC Bioinformatics, 2017;18(1):456. doi: 10.1186/s12859-017-1867-6).
+A full implementation of both methods can be found on github, maintained by Zok and Wiedemann.</p>
+
+
+
+
+<p>Most important features of both methods / measures:</p>
+
+
+
+
+<ul>
+<li><p>MCQ</p>
+
+<ul>
+<li>The method applies to a pair of 3D structures and is size independent.</li>
+<li>It can be used for a set of structures in all-against-all or all-against-target mode.</li>
+<li>It translates typical algebraic representation of a 3D structure into the trigonometric one (a set of torsion angles).</li>
+<li>It computes the distance between structures in torsion angle space.</li>
+<li>The distance is measured as mean of local distances between the corresponding angles, and provided in degrees.</li>
+<li>The measure is sequence independent.</li>
+</ul>
+</li>
+<li><p>LCS-TA</p>
+
+<ul>
+<li>The method applies to a pair of 3D structures and is size independent.</li>
+<li>It uses MCQ-based measure for structure comparison.</li>
+<li>Within the compared structures, it finds the longest continuous segments which display similarity in torsion angle space.</li>
+<li>Two segments are considered similar if their MCQ is below predefined threshold.</li>
+<li>The method provides segment length and its position in the structure.</li>
+<li>The length of the longest continuous segment is a measure of similarity of two structures.</li>
+<li>The method can be run in sequence dependent or sequence independent mode.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<p>MCQ is maintained by <a href="mailto:tzok@cs.put.poznan.pl">Zok</a>, while LCS-TA is maintained by <a href="mailto:jwiedemann@cs.put.poznan.pl">Wiedemann</a></p>
+
 </div>
 
 
@@ -182,6 +228,13 @@
 
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2018-07-22T11:48:14+01:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
           
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/rnapuzzlestoolkit/blog/categories/metrics/'>metrics</a>
+  
+</span>
 
 
         </p>
@@ -285,7 +338,9 @@
   <div class="panel-heading">
       <h3 class="panel-title">Categories</h3>
   </div>
-    <div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/metrics/'>metrics (2)</a></div>
+    <div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/dataset/'>dataset (1)</a></div>
+<div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/format/'>format (2)</a></div>
+<div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/metrics/'>metrics (4)</a></div>
 
 
 </section>

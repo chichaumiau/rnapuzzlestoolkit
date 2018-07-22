@@ -156,7 +156,40 @@
   </header>
 
 
-<div class="entry-content clearfix" itemprop="articleBody description">
+<div class="entry-content clearfix" itemprop="articleBody description"><p><a href="https://github.com/mantczak/rnaqua.git">RNAQUA (RNA QUality Assessment)</a> is a web service based wrapper of basic RNA comparison metrics. It is a RESTful web service client developed in Java. The tool provides a set of web services initially designed for RNAssess (Lukasiak et al., Nucleic Acids Research, 2015;43(W1):W502-W506. doi:10.1093/nar/gkv557) to support the quality assessment of RNA 3D structures. RNAQUA requires a stable release of JRE 7 (or later) installed on a user workstation with an internet access. Full implementation of the tool is stored on github and maintained by Antczak. The binaries and use cases can be downloaded from <a href="https://github.com/mantczak/rnaqua/releases/download/v1.0/rnaqua-binary.zip">here</a>.
+Most important features of RNAQUA:</p>
+
+
+
+
+<ul>
+<li>At the input, a user provides RNA 3D structure(s) in PDB format.</li>
+<li>Output data are returned in XML format.</li>
+<li>RNAQUA allows to compute the following measures:
+
+<ul>
+<li>ClashScore,</li>
+<li>Root-mean-square deviation (RMSD),</li>
+<li>Interaction network fidelity (INF),</li>
+<li>Deformation index (DI),</li>
+<li>P-value (either for entire RNA 3D structure(s) or for a set of discontinuous 3D substructures).</li>
+</ul>
+</li>
+<li>Two processing modes are available:
+
+<ul>
+<li>An analysis of single RNA 3D structure (PDB validation, ClashScore, sequence-based analysis, structure unification),</li>
+<li>An analysis of RNA 3D model(s) with respect to the reference structure (RMSD, INF, DI, P-value, Deformation profile, sequence-based differences between structures, multiple models over the reference structure superposition).</li>
+</ul>
+</li>
+<li>Optionally, the user can define alignment between the reference structure and all corresponding RNA 3D model(s) which is helpful if there are differences in sequence, distribution of chains or residue numbering.</li>
+</ul>
+
+
+
+
+<p>This metric tool is maintained by <a href="mailto:mantczak@cs.put.poznan.pl">Antczak</a>.</p>
+
 </div>
 
 
@@ -182,6 +215,13 @@
 
 <span class="glyphicon glyphicon-calendar"></span> <time datetime="2018-07-22T11:48:26+01:00"  data-updated="true" itemprop="datePublished dateCreated">ordinal</time>
           
+
+<span class="glyphicon glyphicon-tags"></span>&nbsp;
+<span class="categories">
+  
+    <a class='category' href='/rnapuzzlestoolkit/blog/categories/metrics/'>metrics</a>
+  
+</span>
 
 
         </p>
@@ -283,7 +323,9 @@
   <div class="panel-heading">
       <h3 class="panel-title">Categories</h3>
   </div>
-    <div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/metrics/'>metrics (2)</a></div>
+    <div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/dataset/'>dataset (1)</a></div>
+<div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/format/'>format (2)</a></div>
+<div class='list-group-item'><a href='/rnapuzzlestoolkit/blog/categories/metrics/'>metrics (4)</a></div>
 
 
 </section>
