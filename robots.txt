@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://chichaumiau.github.io/rnapuzzlestoolkit/sitemap.xml 
