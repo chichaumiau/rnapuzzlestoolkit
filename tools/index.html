@@ -149,6 +149,183 @@
 <meta itemprop="description" content="A computational resource of RNA 3D structure benchmark datasets, assessment metrics and structure manipulation tools." />
 <meta itemprop="url" content="http://chichaumiau.github.io/rnapuzzlestoolkit" />
 
+<p><a href="https://github.com/mantczak/rnaqua.git">RNAQUA (RNA QUality Assessment)</a> is a web service based wrapper of basic RNA comparison metrics. It is a RESTful web service client developed in Java. The tool provides a set of web services initially designed for RNAssess (Lukasiak et al., Nucleic Acids Research, 2015;43(W1):W502-W506. doi:10.1093/nar/gkv557) to support the quality assessment of RNA 3D structures. RNAQUA requires a stable release of JRE 7 (or later) installed on a user workstation with an internet access. Full implementation of the tool is stored on github and maintained by Antczak. The binaries and use cases can be downloaded from <a href="https://github.com/mantczak/rnaqua/releases/download/v1.0/rnaqua-binary.zip">here</a>.
+Most important features of RNAQUA:</p>
+
+
+
+
+<ul>
+<li>At the input, a user provides RNA 3D structure(s) in PDB format.</li>
+<li>Output data are returned in XML format.</li>
+<li>RNAQUA allows to compute the following measures:
+
+<ul>
+<li>ClashScore,</li>
+<li>Root-mean-square deviation (RMSD),</li>
+<li>Interaction network fidelity (INF),</li>
+<li>Deformation index (DI),</li>
+<li>P-value (either for entire RNA 3D structure(s) or for a set of discontinuous 3D substructures).</li>
+</ul>
+</li>
+<li>Two processing modes are available:
+
+<ul>
+<li>An analysis of single RNA 3D structure (PDB validation, ClashScore, sequence-based analysis, structure unification),</li>
+<li>An analysis of RNA 3D model(s) with respect to the reference structure (RMSD, INF, DI, P-value, Deformation profile, sequence-based differences between structures, multiple models over the reference structure superposition).</li>
+</ul>
+</li>
+<li>Optionally, the user can define alignment between the reference structure and all corresponding RNA 3D model(s) which is helpful if there are differences in sequence, distribution of chains or residue numbering.</li>
+</ul>
+
+
+
+
+<p>This metric tool is maintained by <a href="mailto:mantczak@cs.put.poznan.pl">Antczak</a>.</p>
+
+<p><a href="https://github.com/tzok/mcq4structures">MCQ (Mean of Circular Quantities)</a> has been first presented in the paper “MCQ4Structures to compute similarity of molecule structures” by Zok et al. (Central European Journal of Operations Research, 2014;22(3):457-474. doi: 10.1007/s10100-013-0296-5).</p>
+
+
+
+
+<p><a href="https://github.com/tzok/mcq4structures">LCS-TA</a> (Longest Continuous Segments in Torsion Angle space) applies a measure first described in the paper “LCS-TA to identify similar fragments in RNA 3D structures” by Wiedemann et al. (BMC Bioinformatics, 2017;18(1):456. doi: 10.1186/s12859-017-1867-6).
+A full implementation of both methods can be found on github, maintained by Zok and Wiedemann.</p>
+
+
+
+
+<p>Most important features of both methods / measures:</p>
+
+
+
+
+<ul>
+<li><p>MCQ</p>
+
+<ul>
+<li>The method applies to a pair of 3D structures and is size independent.</li>
+<li>It can be used for a set of structures in all-against-all or all-against-target mode.</li>
+<li>It translates typical algebraic representation of a 3D structure into the trigonometric one (a set of torsion angles).</li>
+<li>It computes the distance between structures in torsion angle space.</li>
+<li>The distance is measured as mean of local distances between the corresponding angles, and provided in degrees.</li>
+<li>The measure is sequence independent.</li>
+</ul>
+</li>
+<li><p>LCS-TA</p>
+
+<ul>
+<li>The method applies to a pair of 3D structures and is size independent.</li>
+<li>It uses MCQ-based measure for structure comparison.</li>
+<li>Within the compared structures, it finds the longest continuous segments which display similarity in torsion angle space.</li>
+<li>Two segments are considered similar if their MCQ is below predefined threshold.</li>
+<li>The method provides segment length and its position in the structure.</li>
+<li>The length of the longest continuous segment is a measure of similarity of two structures.</li>
+<li>The method can be run in sequence dependent or sequence independent mode.</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<p>MCQ is maintained by <a href="mailto:tzok@cs.put.poznan.pl">Zok</a>, while LCS-TA is maintained by <a href="mailto:jwiedemann@cs.put.poznan.pl">Wiedemann</a></p>
+
+<p>We provide all the native and predicted structures from RNA-Puzzles <a href="https://github.com/RNA-Puzzles/RNA-Puzzles_dataset">here</a> as a dataset resource.</p>
+
+
+
+
+<p>Currently, there is few gold standard datasets available  in benchmarking RNA 3D structure prediction. RNA-Puzzles as a well-established blind assessment of RNA 3D structure prediction. Therefore, the structure data from RNA-Puzzles can provide as a good benchmark set for RNA 3D structure prediction. Besides, the predicted structures submitted to RNA-Puzzles, which are generated through various prediction methods that generally covers all the RNA 3D structure prediction methods, can be considered as perfect decoy sets in deriving energy functions for RNA structure folding.</p>
+
+
+
+
+<p>We provide both <a href="https://github.com/RNA-Puzzles/RNA-Puzzles_dataset/tree/master/raw">raw</a> predictions and <a href="https://github.com/RNA-Puzzles/RNA-Puzzles_dataset/tree/master/normalized">normalized</a> format of the RNA structures. Besides, we also normalized the structures with <a href="https://github.com/RNA-Puzzles/rna-pdb-tools">RNA-PDB-tools</a> and provide the results <a href="https://github.com/RNA-Puzzles/RNA-Puzzles-Normalized-submissions">here</a>.</p>
+
+<p>After the first RNA-Puzzles meeting (2016 Oct, Strasbourg), the RNA-Puzzles community have agreed to unify all predictions to the same PDB format.</p>
+
+
+
+
+<p>To check if the submitted structures are in good format, a simple script based tool is provided:</p>
+
+
+
+
+<h1><a href="https://github.com/RNA-Puzzles/RNA-Puzzzles_format">RNA-Puzzles format</a></h1>
+
+
+
+
+<p> &ndash; a tool used to check if a predicted structure is in good format.</p>
+
+
+
+
+<p>To format/normalize RNA structures, please use <a href="https://chichaumiau.github.io/rnabench/blog/2017/11/11/rna-structure-format-tools/">structure normalization tools</a>.</p>
+
+<p>RNA structures in RNA-Puzzles are deposited as <a href="https://www.rcsb.org/pdb/file_formats/pdb/pdbguide2.2/PDB_format_1992.pdf">PDB</a> format. However, we need to consider the variations when participants generate their predictions, e.g. the nomencleture of the residue/atom names, and the variations in the format of deposited native structure. Sometimes, the sequence used in prediction may slightly deviate from the solved crystal structure: in such a case, we need to compare only the common part of the structure.</p>
+
+
+
+
+<p>Considering these aspects, we provide some tools here to normalize the PDB format of RNA structure:</p>
+
+
+
+
+<h1><a href="https://github.com/RNA-Puzzles/BasicAssessMetrics">PDB normalizer</a></h1>
+
+
+
+
+<p>&ndash; this tool is the PDB normalization tool used by RNA-Puzzles, and is part of the basic assessment metrics tool. (Maintained by <a href="mailto:zmiao@ebi.ac.uk">Chichau</a>)</p>
+
+
+
+
+<h1><a href="https://github.com/RNA-Puzzles/rna-pdb-tools">RNA PDB tools</a></h1>
+
+
+
+
+<p>&ndash; Alternatively, you may use a more functional tool RNA-PDB-tools, which is mained by <a href="mailto:magnus@genesilico.pl">Marcin Magnus</a>.</p>
+
+<div class="entry-content clearfix" itemprop="articleBody description"><p>Deformation profile is a metric first discribed in the paper &ldquo;New metrics for comparing and assessing discrepancies between RNA 3D structures and models.&rdquo; (RNA. 2009 Oct;15(10):1875-85. doi: 10.1261/rna.1700409. )</p>
+
+<p>A full implementation can be found at <a href="https://github.com/RNA-Puzzles/DeformationProfile">github</a>, maintained by <a href="mailto:zmiao@ebi.ac.uk">Chichau</a></p>
+
+<p>RNA-Puzzles Assessment consider all the &ldquo;<a href="https://github.com/RNA-Puzzles/BasicAssessMetrics">Basic Assessment Metrics</a>&rdquo;, <a href="https://github.com/RNA-Puzzles/DeformationProfile">Deformation profile</a> and &ldquo;<a href="https://github.com/tzok/mcq4structures">Mean of Circular Quantities</a>&rdquo;.</p>
+</div>
+
+<p>The basic metrics of RNA 3D structure comparison include:</p>
+
+
+
+
+<ul>
+<li>Root Mean Square Deviation (RMSD)</li>
+<li>P value</li>
+<li>Deformation Index</li>
+<li>Interaction Network fidelity
+
+<ul>
+<li>this metric can be measured by different types of contacts, including:</li>
+<li>all contacts</li>
+<li>Watson-Crick interaction</li>
+<li>non-Waston-Crick interaction</li>
+<li>stacking</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<p>All of these metrics have been implemented in <a href="https://github.com/RNA-Puzzles/BasicAssessMetrics">Basic Assess Metrics</a> (author: <a href="mailto:zmiao@ebi.ac.uk">Chichau</a>)</p>
+
+
+
 
 
 <div class="panel panel-info">
