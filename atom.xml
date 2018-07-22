@@ -4,7 +4,7 @@
   <title><![CDATA[RNA-Puzzles toolkit]]></title>
   <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/atom.xml" rel="self"/>
   <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/"/>
-  <updated>2018-07-22T11:45:02+01:00</updated>
+  <updated>2018-07-22T11:49:56+01:00</updated>
   <id>http://chichaumiau.github.io/rnapuzzlestoolkit/</id>
   <author>
     <name><![CDATA[Chichau Miau]]></name>
@@ -12,6 +12,60 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[RNAQUA]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rnaqua/"/>
+    <updated>2018-07-22T11:48:26+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rnaqua</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MCQ and LCS-TA]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/mcq-and-lcs-ta/"/>
+    <updated>2018-07-22T11:48:14+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/mcq-and-lcs-ta</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RNA-Puzzles Datasets]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-datasets/"/>
+    <updated>2018-07-22T11:48:03+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-datasets</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RNA-Puzzles Format Check]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-format-check/"/>
+    <updated>2018-07-22T11:47:47+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-puzzles-format-check</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[RNA Structure Format Tools]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-structure-format-tools/"/>
+    <updated>2018-07-22T11:47:31+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/rna-structure-format-tools</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Deformation Profile]]></title>
+    <link href="http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/deformation-profile/"/>
+    <updated>2018-07-22T11:47:03+01:00</updated>
+    <id>http://chichaumiau.github.io/rnapuzzlestoolkit/blog/2018/07/22/deformation-profile</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Basic Assessment Metrics]]></title>
